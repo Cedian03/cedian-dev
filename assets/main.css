@@ -4,7 +4,7 @@ body {
     background-color: #111;
 }
 
-#container {
+.container {
     text-align: center;
 
     height: 100vh;
@@ -13,13 +13,17 @@ body {
     justify-content: center;
 }
 
-#links a {
+.links a {
     color: #eee;
     margin: 5px;
     transition: opacity 400ms;
 }
 
-#links a:hover {
+.links a:hover {
     opacity: 0.3;
     transition: opacity 200ms;
+}
+
+.links h1 a {
+    all: inherit;
 }
