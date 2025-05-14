@@ -2,7 +2,8 @@ FROM rust:latest
 
 WORKDIR /app
 
-RUN cargo install dioxus-cli
+RUN cargo install cargo-binstall
+RUN yes | cargo binstall dioxus-cli
 
 COPY . .
 
